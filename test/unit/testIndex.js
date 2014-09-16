@@ -1,15 +1,8 @@
-var chai = require('chai');
 var sinon = require('sinon');
 var _ = require('lodash');
-var assert = chai.assert;
-_.each(sinon.assert, function(func, methodName) {
-    console.log(methodName);
-    assert[methodName] = function() {
-        return sinon.assert[methodName].apply(null, arguments);
-    };
-});
+var assert = require('../common').assert;
 
-var asyncLimit = require('../index');
+var asyncLimit = require('../../index');
 
 describe('async-limit', function() {
 
