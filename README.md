@@ -23,9 +23,9 @@ limitedGet('http://www.pinterest.com', function(err, res, body) {
 });
 ```
 
-This is a relatively low-level primitive.  If you're using it as in the simple example above, you're better off with something like `mapLimit` from [async.js][https://github.com/caolan/async].
+This is a relatively low-level primitive.  If you're using it as in the simple example above, you're better off with something like `mapLimit` from [https://github.com/caolan/async][async].
 
-Its real use is in controlling behavior of the underlying method when individual calls are abstracted away by higher-level approaches to async control flow.  E.g., using the [co][https://github.com/visionmedia/co] library to drive ES6 generators:
+Its real use is in controlling behavior of the underlying method when individual calls are abstracted away by higher-level approaches to async control flow.  E.g., using the [https://github.com/visionmedia/co][co] library to drive ES6 generators:
 
 ```javascript
 var fs = require('fs');
