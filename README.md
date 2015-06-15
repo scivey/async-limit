@@ -87,11 +87,6 @@ Installation
     npm install async-limit
 
 
-GitHub
-------------
-https://github.com/scivey/async-limit
-
-
 Contact
 ------------
 https://github.com/scivey
